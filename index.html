@@ -1,27 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TAPITOL</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500&family=Gloria+Hallelujah&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
     <header>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>  
-            </label>
-            <a href="./index.html" calss="enlace">
-                <img src="./img/Tapitol-Logo.png" alt="logoTapitol" class="logo">
-            </a>
-            
-   
-    
+      <nav class="contenido">
+        <div class="logo">
+        </div>
+        <ul class="nav">
+          <li>SILLONES</li>
+          <li>TELAS</li>
+          <li>NUESTRA EMPRESA</li>
+          <li>CONTACTANOS</li>
+        </ul>
+        <div class="carrito-compras">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>
+              <div id="carrito" class="tabla-carrito">
+                <table id="lista-carrito">
+                    <thead>
+                      <th> PRODUCTO </th>
+                      <th> NOMBRE </th>
+                      <th> PRECIO </th>
+                      <th> CANTIDAD </th>
+                      <th></th>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <a href="#" id="vaciar-carrito" class="button">Vaciar Carrito</a>
+              </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      
+      <section>
+      <div class="container-slide">
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+              <img src="./img/inicio/arlington-3.jpg.webp" class="d-block w-100" alt="Recuperar Datos">
+              </div>
+              <div class="carousel-item">
+              <img src="./img/inicio/lux-1-1.jpg.webp" class="d-block w-100" alt="Servicio al Cliente">
+              </div>
+              <div class="carousel-item">
+              <img src="./img/inicio/watts-1.jpg.webp" class="d-block w-100" alt="Tecnicos Especializados">
+              </div>
+              
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+  </section>
+        <section id="productos-sillones">
+          <div class="texto-sillones">
+            <h2>NUESTROS SILLONES</h2>
+            <p>Elige nuestras opciones</p>
+          </div>
+          <div class="grid-productos contenido">
+            <article class="card 1">
+              <img src="./img/Sillones/Golden-2018.jpg" alt="">
+              <div class="texto-card">
+                <h3>SILLON GOLDEN</h3>
+                <p>$270.000</p>
+                <a class="boton" href="#" data-id="1">AGREGAR AL CARRITO</a>
+              </div>
+            </article>
+            <article class="card 2">
+              <img src="./img/Sillones/aloha.jpg" alt="">
+              <div class="texto-card">
+                <h3>SILLON ALOHA</h3>
+                <p>$300.000</p>
+                <a class="boton" href="#" data-id="2">AGREGAR AL CARRITO</a>
+              </div>
+            </article>
+            <article class="card 3">
+              <img src="./img/Sillones/Sofá-Asia.jpg" alt="">
+              <div class="texto-card">
+                <h3>SOFA ASIA</h3>
+                <p>$220.000</p>
+                <a class="boton" href="#" data-id="3">AGREGAR AL CARRITO</a>
+              </div>
+            </article>
+           
+            <article class="texto-telas">
+                <h2>TELAS</h2>
+                <p>Elige nuestras opciones</p>
+            </article>
+            <article class="card 6">
+              <img src="./img/Telas/chenille-orly.jpg" alt="">
+              <div class="texto-card">
+                <h3>CHENILLE</h3>
+                <p>$50.000</p>
+                <a class="boton" href="#" data-id="6">AGREGAR AL CARRITO</a>
+              </div>
+            </article>
+            <article class="card 7">
+              <img src="./img/Telas/lienzo.jpg" alt="">
+              <div class="texto-card">
+                <h3>LIENZO</h3>
+                <p>$60.000</p>
+                <a class="boton" href="#" data-id="7">AGREGAR AL CARRITO</a>
+              </div>
+            </article>
+            <article class="card 8">
+              <img src="./img/Telas/telasexpress-kansas-vison.jpg" alt="">
+              <div class="texto-card">
+                <h3>KANSAS VISION</h3>
+                <p>$40.000</p>
+                <a class="boton" href="#" data-id="8">AGREGAR AL CARRITO</a>
+              </div>
+            </article>
+          </div>
+      
+        </section>
+    </main>
+    <!-- <script src="./js/main.js"></script> -->
+    <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
-
-
-
-    <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
